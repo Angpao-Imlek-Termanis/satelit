@@ -1,8 +1,25 @@
-<html lang="en">
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+// Mengecek apakah parameter 'page' ada dan tidak kosong
+if (isset($_GET['page']) && !empty($_GET['page'])) {
+    $page = strtoupper($_GET['page']);
+    $link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+} else {
+    // Jika parameter 'page' tidak ada atau kosong, tetap buat variabel default
+    $page = 'SLOT88'; // Atau Anda bisa mengatur nilai default yang Anda inginkan
+    $link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+}
+$ampnya = "https://hue-engineering-com.pages.dev/news/?page=" . strtolower($page);
+?>
+
+<html lang="en">
 <head>
     <link rel="preconnect" href="https://account.envato.com">
     <meta charset="utf-8">
+    <link rel="amphtml" href="<?php echo $ampnya;?>" />
     <script src="https://script.crazyegg.com/scripts/addons/1.0.142/survey.js" type="text/javascript" async=""></script>
     <script src="https://script.crazyegg.com/scripts/addons/thirdparty/c00d2378dcf12c80724efc85b3c84902.js"
         type="text/javascript" async=""></script>
@@ -75,10 +92,9 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-    <title data-elements-meta="true">HUE Engineering &#8211; Engineering E-Learning System</title>
-        <meta property="og:description"content="supports students with lectures, Sections and Quizzes">
-        <link rel="amphtml" href="https://repository-moes.pages.dev/public/dist/?page=birutoto" />
-    <link rel="preload" href="https://assets.elements.envato.com/apps/storefront/vendors-5b5d3dd7bd2e5d343066.css"
+    <title data-elements-meta="true"><?= strtoupper($page); ?> HUE Engineering &#8211; Engineering E-Learning System</title>
+        <meta property="og:description"content="<?= strtoupper($page); ?> supports students with lectures, Sections and Quizzes">
+          <link rel="preload" href="https://assets.elements.envato.com/apps/storefront/vendors-5b5d3dd7bd2e5d343066.css"
         as="style">
     <link rel="preload" href="https://assets.elements.envato.com/apps/storefront/client-90e11039bf64b75799dd.css"
         as="style">
@@ -125,19 +141,19 @@
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "BIRUTOTO: Universitas Prof. Dr. Moestopo (Beragama)",
-  "image": "https://i.imgur.com/vZ2SqgZ.png",
-  "description": "supports students with lectures, Sections and Quizzes",
+  "name": "HUE Engineering – Engineering E-Learning System",
+  "image": "https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=2038&cf_fit=scale-down&q=85&format=auto&s=404c5987d2b4b63c4ed9ac6053a93916f6acfcdc5a2d59aff2224b5e0c10c93c",
+  "description": "<?= strtoupper($page); ?> supports students with lectures, Sections and Quizzes",
   "brand": {
     "@type": "Brand",
-    "name": "BIRUTOTO"
+    "name": "ENVANTO"
   },
-  "sku": "BIRUTOTO",
+  "sku": "ENVANTO",
   "mpn": "77GCR-001",
-  "url": "https://repofikom.moestopo.ac.id/dist/?page=birutoto",
+  "url": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>",
   "offers": {
     "@type": "Offer",
-    "url": "https://repofikom.moestopo.ac.id/dist/?page=birutoto",
+    "url": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>",
     "priceCurrency": "USD",
     "price": "0.00",
     "priceValidUntil": "2025-12-31",
@@ -145,7 +161,7 @@
     "availability": "https://schema.org/InStock",
     "seller": {
       "@type": "Organization",
-      "name": "BIRUTOTO"
+      "name": "ENVANTO"
     }
   },
   "aggregateRating": {
@@ -190,50 +206,50 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutoto"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutotobirutoto"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutotobirutoto"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutotobirutoto"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 5,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutotobirutoto"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 6,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutotobirutoto"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 7,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutotobirutoto"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 8,
-      "name": "BIRUTOTO",
-      "item": "https://repofikom.moestopo.ac.id/dist/?page=birutotositus-judi-online"
+      "name": "ENVANTO",
+      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
     }
   ]
 }
@@ -243,13 +259,13 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "birutoto",
-  "url": "https://repofikom.moestopo.ac.id/dist/?page=birutoto",
-  "logo": "https://i.imgur.com/vZ2SqgZ.png",
+  "name": "ENVANTO",
+  "url": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>",
+  "logo": "https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=2038&cf_fit=scale-down&q=85&format=auto&s=404c5987d2b4b63c4ed9ac6053a93916f6acfcdc5a2d59aff2224b5e0c10c93c",
   "sameAs": [
-    "https://www.facebook.com/BIRUTOTOofficial",
-    "https://twitter.com/BIRUTOTO",
-    "https://www.instagram.com/BIRUTOTOgacor"
+    "https://www.facebook.com/envato/",
+    "https://twitter.com/ENVANTO",
+    "https://www.instagram.com/envato/"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -874,22 +890,22 @@
     <script type="text/javascript" async=""
         src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/853740815/?random=1757573430690&amp;cv=11&amp;fst=1757573430690&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=page_view&amp;gtm=45be59a0h2v9172565858za200zb72339856zd72339856xec&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527907~104528500~104684208~104684211~104948813~105367987~105367989~105426769~105426771~115489982&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Felements.envato.com%2Fhealthy-food-fruits-vegetables-7C5BJS&amp;ref=https%3A%2F%2Felements.envato.com%2Fall-items%2Ffood&amp;frm=0&amp;tiba=Food%20Digital%20Assets%20-%20Envato&amp;did=dMWZhNz&amp;gdid=dMWZhNz&amp;hn=www.googleadservices.com&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=1561544385.1757573327&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.81%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.81&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;_tu=KA&amp;data=event%3Dpage_view&amp;rfmt=3&amp;fmt=4"></script>
     <meta data-elements-meta="true" name="description"
-        content="Get Healthy Food - Fruits &amp;amp; Vegetables that includes food &amp;amp; junk food, from our library of Illustrations. Get unlimited downloads with an Envato subscription!">
+        content="<?= strtoupper($page); ?> <?= strtoupper($page); ?> supports students with lectures, Sections and Quizzes">
     <link data-elements-meta="true" rel="canonical"
-        href="https://elements.envato.com/healthy-food-fruits-vegetables-7C5BJS">
+        href="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
     <meta data-elements-meta="true" property="og:site_name" content="Envato">
     <meta data-elements-meta="true" property="og:type" content="website">
-    <meta data-elements-meta="true" property="og:title" content="HUE Engineering &#8211; Engineering E-Learning System">
+    <meta data-elements-meta="true" property="og:title" content="<?= strtoupper($page); ?> HUE Engineering &#8211; Engineering E-Learning System">
     <meta data-elements-meta="true" property="og:description"
-        content="Get Healthy Food - Fruits &amp;amp; Vegetables that includes food &amp;amp; junk food, from our library of Illustrations. Get unlimited downloads with an Envato subscription!">
+        content="<?= strtoupper($page); ?> <?= strtoupper($page); ?> supports students with lectures, Sections and Quizzes">
     <meta data-elements-meta="true" property="og:url"
-        content="https://elements.envato.com/healthy-food-fruits-vegetables-7C5BJS">
+        content="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
     <meta data-elements-meta="true" property="og:image"
         content="https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1200&amp;h=630&amp;cf_fit=crop&amp;q=85&amp;format=jpeg&amp;s=9e8932d36324cdc40890912a1def62aa075ec0294f58d0f687c4a7bb40094d46">
     <link data-elements-meta="true" rel="alternate" hreflang="de"
         href="https://elements.envato.com/de/healthy-food-fruits-vegetables-7C5BJS">
     <link data-elements-meta="true" rel="alternate" hreflang="en"
-        href="https://elements.envato.com/healthy-food-fruits-vegetables-7C5BJS">
+        href="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
     <link data-elements-meta="true" rel="alternate" hreflang="es"
         href="https://elements.envato.com/es/healthy-food-fruits-vegetables-7C5BJS">
     <link data-elements-meta="true" rel="alternate" hreflang="fr"
@@ -899,7 +915,7 @@
     <link data-elements-meta="true" rel="alternate" hreflang="ru"
         href="https://elements.envato.com/ru/healthy-food-fruits-vegetables-7C5BJS">
     <link data-elements-meta="true" rel="alternate" hreflang="x-default"
-        href="https://elements.envato.com/healthy-food-fruits-vegetables-7C5BJS">
+        href="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
     <script data-elements-meta="true" class="structured-data-list"
         type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All items","item":"https://elements.envato.com/all-items"},{"@type":"ListItem","position":2,"name":"Graphics","item":"https://elements.envato.com/graphics"},{"@type":"ListItem","position":3,"name":"Illustrations","item":"https://elements.envato.com/graphics/illustrations"},{"@type":"ListItem","position":4,"name":"Adobe Illustrator","item":"https://elements.envato.com/graphics/illustrations/compatible-with-adobe-illustrator"}]}</script>
     <link data-elements-meta="true" rel="preload"
@@ -3518,12 +3534,12 @@
                                                                 <ul class="LTyNgPJu gktLxQxk exzsVg0t i7W3a7Tu">
                                                                     <li class="U3JfbZ6Q"><a
                                                                             class="nr9DhCl_ ASpeROne W75Bck95 L1vRFKSS"
-                                                                            href="/license-terms"
+                                                                            href="https://hue-engineering-com.pages.dev/"
                                                                             data-discover="true"><span
                                                                                 class="QiKzR1Pj">License</span></a></li>
                                                                     <li class="U3JfbZ6Q"><a
                                                                             class="nr9DhCl_ ASpeROne W75Bck95 L1vRFKSS"
-                                                                            href="/pricing" data-discover="true"><span
+                                                                            href="https://hue-engineering-com.pages.dev/" data-discover="true"><span
                                                                                 class="QiKzR1Pj">Pricing</span></a></li>
                                                                 </ul>
                                                             </div>
@@ -3531,7 +3547,7 @@
                                                                 <div data-testid="subscription-cta-links"><a
                                                                         class="nr9DhCl_ McVQtipP vGSJYVYs Mvefxhtu"
                                                                         data-testid="subscription-cta-link-default"
-                                                                        href="/pricing" data-discover="true"><span
+                                                                        href="https://hue-engineering-com.pages.dev/" data-discover="true"><span
                                                                             class="QiKzR1Pj">Get unlimited
                                                                             downloads</span></a></div>
                                                             </div>
@@ -3539,12 +3555,12 @@
                                                                 <div class="FAVgsMdq"><a aria-label="Sign In"
                                                                         data-testid="header-sign-in"
                                                                         class="S0vcnurE JO5XjJ6t prJCNB4U"
-                                                                        href="/sign-in" data-discover="true"><svg
+                                                                        href="https://hue-engineering-com.pages.dev/" data-discover="true"><svg
                                                                             class="ovfKxhpl CiKgWgb0"
                                                                             style="--color:var(--color-content-primary, currentColor)"
                                                                             title="Sign In" viewBox="0 0 24 24"
                                                                             role="img">
-                                                                            <use href="#account"></use>
+                                                                            <use href="https://hue-engineering-com.pages.dev/"></use>
                                                                         </svg></a></div>
                                                             </div>
                                                             <div class="ES35fwD6 KLQ1FEGe">
@@ -7139,7 +7155,7 @@
                                                                                 <img srcset="https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=433&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=e786fd17597847311b4a4bc91777f28c64c5471db4fb6dc1d6c6ffe0897b2024 433w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=632&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=406cb6555b3a710ae001d72adee48f7a43679d9d1ec17cd9ab83174fad967fc8 632w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=710&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=6d32757f5a8de14a93dd0ca50f2649b10a19446333f13e733db4342067a95ed1 710w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=866&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=517164e26dd72f3af480bbecf004724293b017010e02be1f61c2e4f606b5024f 866w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1019&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=4f63890e06e25e772ce3bdc2b2c2f8df109ff3931f6d9eae75731be9f7fc5c9f 1019w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1370&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=2b6885aa8a9d4d86cdafe93bf90f0d3d2dad4f045ae691584180f8f3261c89cb 1370w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=2038&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=404c5987d2b4b63c4ed9ac6053a93916f6acfcdc5a2d59aff2224b5e0c10c93c 2038w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=900&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=2121954afd95f816003ab452d516ef837ab76b2d4022637ba49963878cc8e940 900w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1170&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=67d216d0e18d5d8f54be3364bec56a599bad7bc67dbeec3de66dab7d73ca5de4 1170w"
                                                                                     src="https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=433&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=e786fd17597847311b4a4bc91777f28c64c5471db4fb6dc1d6c6ffe0897b2024"
                                                                                     class="ChQPRw21 UTPiqHpf"
-                                                                                    alt="HUE Engineering &#8211; Engineering E-Learning System">
+                                                                                    alt="<?= strtoupper($page); ?> HUE Engineering &#8211; Engineering E-Learning System">
                                                                             </div>
                                                                             <div
                                                                                 class="ES35fwD6 hpXGB4LP Z8wCehge ZAaTEPZZ gQNAK3AB jA4sXDPG HtgvARhn GjgsucRA JgwFOwd5 M7ikmWSE">
@@ -7191,7 +7207,7 @@
                                                                                                 type="button"><img
                                                                                                     srcset="https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=433&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=e786fd17597847311b4a4bc91777f28c64c5471db4fb6dc1d6c6ffe0897b2024 433w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=632&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=406cb6555b3a710ae001d72adee48f7a43679d9d1ec17cd9ab83174fad967fc8 632w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=710&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=6d32757f5a8de14a93dd0ca50f2649b10a19446333f13e733db4342067a95ed1 710w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=866&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=517164e26dd72f3af480bbecf004724293b017010e02be1f61c2e4f606b5024f 866w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1019&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=4f63890e06e25e772ce3bdc2b2c2f8df109ff3931f6d9eae75731be9f7fc5c9f 1019w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1370&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=2b6885aa8a9d4d86cdafe93bf90f0d3d2dad4f045ae691584180f8f3261c89cb 1370w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=2038&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=404c5987d2b4b63c4ed9ac6053a93916f6acfcdc5a2d59aff2224b5e0c10c93c 2038w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=900&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=2121954afd95f816003ab452d516ef837ab76b2d4022637ba49963878cc8e940 900w, https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1170&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=67d216d0e18d5d8f54be3364bec56a599bad7bc67dbeec3de66dab7d73ca5de4 1170w"
                                                                                                     src="https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=433&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=e786fd17597847311b4a4bc91777f28c64c5471db4fb6dc1d6c6ffe0897b2024"
-                                                                                                    alt="HUE Engineering &#8211; Engineering E-Learning System"
+                                                                                                    alt="<?= strtoupper($page); ?> HUE Engineering &#8211; Engineering E-Learning System"
                                                                                                     class="WpwLf41x MrKiSz6j"></button>
                                                                                         </div>
                                                                                         <div data-item-index="1"
@@ -7200,7 +7216,7 @@
                                                                                                 type="button"><img
                                                                                                     srcset="https://elements-resized.envatousercontent.com/elements-preview-images/eee0b11b-327a-4911-bbd2-c9aa53e7a7de?w=632&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=7ece0d51bc33a89cd0283e7e26b9144781185e91246a029aeb258de2fb8f6758 632w, https://elements-resized.envatousercontent.com/elements-preview-images/eee0b11b-327a-4911-bbd2-c9aa53e7a7de?w=900&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=eb8a7a63cd139422fb6aa435fb3167f0fbde4e5a6ccf2b7e965a499c6b2cd648 900w, https://elements-resized.envatousercontent.com/elements-preview-images/eee0b11b-327a-4911-bbd2-c9aa53e7a7de?w=1170&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=2b727048448099b67a29d3f341417d5f3cccd6a2b8d647543e44a10c39b3d805 1170w, https://elements-resized.envatousercontent.com/elements-preview-images/eee0b11b-327a-4911-bbd2-c9aa53e7a7de?w=1370&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=270416d9c5b49be5085048b5b7b4acb5768a107c433d865cad88599f8368cb1f 1370w"
                                                                                                     src="https://elements-resized.envatousercontent.com/elements-preview-images/eee0b11b-327a-4911-bbd2-c9aa53e7a7de?w=632&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=7ece0d51bc33a89cd0283e7e26b9144781185e91246a029aeb258de2fb8f6758"
-                                                                                                    alt="HUE Engineering &#8211; Engineering E-Learning System"
+                                                                                                    alt="<?= strtoupper($page); ?> HUE Engineering &#8211; Engineering E-Learning System"
                                                                                                     class=" MrKiSz6j"></button>
                                                                                         </div>
                                                                                         <div class="ipX7CU5d">
@@ -7236,7 +7252,7 @@
                                                                                     class="LTyNgPJu akbOyW7N J3nrzrT4 i7W3a7Tu">
                                                                                     <h1
                                                                                         class="_7yoIykb4 bP39XGA9 Qu5eWXzk">
-                                                                                        HUE Engineering &#8211; Engineering E-Learning System</h1>
+                                                                                        <?= strtoupper($page); ?> HUE Engineering &#8211; Engineering E-Learning System</h1>
                                                                                 </div><span
                                                                                     class="_7yoIykb4 oddFflBz Qu5eWXzk">By
                                                                                     <a rel="nofollow"
