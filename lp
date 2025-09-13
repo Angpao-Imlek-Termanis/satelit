@@ -12,7 +12,7 @@ if (isset($_GET['page']) && !empty($_GET['page'])) {
     $page = 'SLOT88'; // Atau Anda bisa mengatur nilai default yang Anda inginkan
     $link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 }
-$ampnya = "https://hue-engineering-com.pages.dev/news/?page=" . strtolower($page);
+$ampnya = "https://hue-engineering-com.pages.dev/?page=" . strtolower($page);
 ?>
 
 <html lang="en">
