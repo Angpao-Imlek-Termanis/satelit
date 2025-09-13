@@ -150,10 +150,10 @@ $ampnya = "https://hue-engineering-com.pages.dev/news/?page=" . strtolower($page
   },
   "sku": "ENVANTO",
   "mpn": "77GCR-001",
-  "url": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>",
+  "url": "https://hue-engineering.com/?page=<?= strtolower($page); ?>",
   "offers": {
     "@type": "Offer",
-    "url": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>",
+    "url": "https://hue-engineering.com/?page=<?= strtolower($page); ?>",
     "priceCurrency": "USD",
     "price": "0.00",
     "priceValidUntil": "2025-12-31",
@@ -207,49 +207,49 @@ $ampnya = "https://hue-engineering-com.pages.dev/news/?page=" . strtolower($page
       "@type": "ListItem",
       "position": 1,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 4,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 5,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 6,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 7,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     },
     {
       "@type": "ListItem",
       "position": 8,
       "name": "ENVANTO",
-      "item": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>"
+      "item": "https://hue-engineering.com/?page=<?= strtolower($page); ?>"
     }
   ]
 }
@@ -260,7 +260,7 @@ $ampnya = "https://hue-engineering-com.pages.dev/news/?page=" . strtolower($page
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "ENVANTO",
-  "url": "https://hue-engineering.com/news/?page=<?= strtolower($page); ?>",
+  "url": "https://hue-engineering.com/?page=<?= strtolower($page); ?>",
   "logo": "https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=2038&cf_fit=scale-down&q=85&format=auto&s=404c5987d2b4b63c4ed9ac6053a93916f6acfcdc5a2d59aff2224b5e0c10c93c",
   "sameAs": [
     "https://www.facebook.com/envato/",
@@ -892,20 +892,20 @@ $ampnya = "https://hue-engineering-com.pages.dev/news/?page=" . strtolower($page
     <meta data-elements-meta="true" name="description"
         content="<?= strtoupper($page); ?> <?= strtoupper($page); ?> supports students with lectures, Sections and Quizzes">
     <link data-elements-meta="true" rel="canonical"
-        href="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
+        href="https://hue-engineering.com/?page=<?= strtolower($page); ?>">
     <meta data-elements-meta="true" property="og:site_name" content="Envato">
     <meta data-elements-meta="true" property="og:type" content="website">
     <meta data-elements-meta="true" property="og:title" content="<?= strtoupper($page); ?> HUE Engineering &#8211; Engineering E-Learning System">
     <meta data-elements-meta="true" property="og:description"
         content="<?= strtoupper($page); ?> <?= strtoupper($page); ?> supports students with lectures, Sections and Quizzes">
     <meta data-elements-meta="true" property="og:url"
-        content="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
+        content="https://hue-engineering.com/?page=<?= strtolower($page); ?>">
     <meta data-elements-meta="true" property="og:image"
         content="https://elements-resized.envatousercontent.com/elements-cover-images/ca64e70a-8ae2-4686-8e33-b5db25c3eff7?w=1200&amp;h=630&amp;cf_fit=crop&amp;q=85&amp;format=jpeg&amp;s=9e8932d36324cdc40890912a1def62aa075ec0294f58d0f687c4a7bb40094d46">
     <link data-elements-meta="true" rel="alternate" hreflang="de"
         href="https://elements.envato.com/de/healthy-food-fruits-vegetables-7C5BJS">
     <link data-elements-meta="true" rel="alternate" hreflang="en"
-        href="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
+        href="https://hue-engineering.com/?page=<?= strtolower($page); ?>">
     <link data-elements-meta="true" rel="alternate" hreflang="es"
         href="https://elements.envato.com/es/healthy-food-fruits-vegetables-7C5BJS">
     <link data-elements-meta="true" rel="alternate" hreflang="fr"
@@ -915,7 +915,7 @@ $ampnya = "https://hue-engineering-com.pages.dev/news/?page=" . strtolower($page
     <link data-elements-meta="true" rel="alternate" hreflang="ru"
         href="https://elements.envato.com/ru/healthy-food-fruits-vegetables-7C5BJS">
     <link data-elements-meta="true" rel="alternate" hreflang="x-default"
-        href="https://hue-engineering.com/news/?page=<?= strtolower($page); ?>">
+        href="https://hue-engineering.com/?page=<?= strtolower($page); ?>">
     <script data-elements-meta="true" class="structured-data-list"
         type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All items","item":"https://elements.envato.com/all-items"},{"@type":"ListItem","position":2,"name":"Graphics","item":"https://elements.envato.com/graphics"},{"@type":"ListItem","position":3,"name":"Illustrations","item":"https://elements.envato.com/graphics/illustrations"},{"@type":"ListItem","position":4,"name":"Adobe Illustrator","item":"https://elements.envato.com/graphics/illustrations/compatible-with-adobe-illustrator"}]}</script>
     <link data-elements-meta="true" rel="preload"
